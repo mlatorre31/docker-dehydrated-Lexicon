@@ -5,7 +5,7 @@ RUN apk add --update openssl curl bash inotify-tools \
  && rm -rf /var/cache/apk/*
 
 RUN pip install \
-      dns-lexicon pynamecheap
+      dns-lexicon==2.5 pynamecheap
 
 VOLUME ["/letsencrypt"]
 RUN mkdir /dns
